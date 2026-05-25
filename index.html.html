@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITI Documents Checklist</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg,#1e3a8a,#2563eb);
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        max-width:550px;
+    }
+
+    .checklist-box{
+        background:white;
+        padding:30px;
+        border-radius:25px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.2);
+        animation: fadeIn 1s ease;
+    }
+
+    h1{
+        text-align:center;
+        color:#1e3a8a;
+        margin-bottom:25px;
+        font-size:32px;
+    }
+
+    .subtitle{
+        text-align:center;
+        color:#666;
+        margin-bottom:25px;
+        font-size:15px;
+    }
+
+    ul{
+        list-style:none;
+    }
+
+    li{
+        background:#f1f5ff;
+        margin:12px 0;
+        padding:15px 18px;
+        border-radius:15px;
+        display:flex;
+        align-items:center;
+        transition:0.3s;
+        border-left:6px solid #2563eb;
+    }
+
+    li:hover{
+        transform:translateX(8px);
+        background:#dbeafe;
+        box-shadow:0 5px 15px rgba(37,99,235,0.2);
+    }
+
+    input[type="checkbox"]{
+        width:20px;
+        height:20px;
+        accent-color:#2563eb;
+        margin-right:15px;
+        cursor:pointer;
+    }
+
+    label{
+        font-size:17px;
+        color:#111827;
+        cursor:pointer;
+        width:100%;
+    }
+
+    .footer{
+        text-align:center;
+        margin-top:25px;
+        color:#777;
+        font-size:14px;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity:0;
+            transform:translateY(20px);
+        }
+        to{
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+
+    @media(max-width:600px){
+        .checklist-box{
+            padding:20px;
+        }
+
+        h1{
+            font-size:26px;
+        }
+
+        label{
+            font-size:15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="checklist-box">
+
+        <h1>🎓 ITI Documents Checklist</h1>
+        <p class="subtitle">
+            આઈ.ટી.આઈ. પ્રવેશ માટે જરૂરી દસ્તાવેજોની યાદી
+        </p>
+
+        <ul>
+
+            <li>
+                <input type="checkbox" id="doc1">
+                <label for="doc1">
+                    શાળા છોડ્યાનું પ્રમાણપત્ર (LC)
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc2">
+                <label for="doc2">
+                    ધોરણ 8, 9 કે 10 ની માર્કશીટ
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc3">
+                <label for="doc3">
+                    ધોરણ 10 નું ટ્રાયલ સર્ટિફિકેટ
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc4">
+                <label for="doc4">
+                    જાતિ અંગેનો દાખલો
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc5">
+                <label for="doc5">
+                    પિતા/વાલીનો આવકનો દાખલો
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc6">
+                <label for="doc6">
+                    આધાર કાર્ડ
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc7">
+                <label for="doc7">
+                    પાસપોર્ટ સાઇઝનો ફોટો
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc8">
+                <label for="doc8">
+                    બેંક પાસબુકની નકલ
+                </label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="doc9">
+                <label for="doc9">
+                    E-mail ID તથા મોબાઇલ નંબર
+                </label>
+            </li>
+
+        </ul>
+
+        <div class="footer">
+            ✅ બધા Documents તૈયાર રાખો
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
